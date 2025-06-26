@@ -1,6 +1,21 @@
+import {useGSAP} from "@gsap/react";
+import gsap from "gsap"
+
+
 const GsapTo = () => {
   // TODO: Implement the gsap.to() method
+ useGSAP( ()=>{
+  gsap.to('#blue-box', {
+    x:200,
+    repeat:-1,
+    yoyo:true,
+    rotation:360,
+    duration:2,
+    ease: "bounce"
+  })
+ }, []);
 
+ //[] is depandency array when the amnimation wil run
   return (
     <main>
       <h1>GsapTo</h1>
