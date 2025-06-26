@@ -14,7 +14,7 @@ const GsapTo = () => {
     ease: "bounce"
   })
  }, []);
-
+// gsap.to accepts one id and somer propertise to apply this id 
  //[] is depandency array when the amnimation wil run
   return (
     <main>
